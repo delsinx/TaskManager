@@ -10,7 +10,7 @@ Este documento representa o plano de desenvolvimento do projeto backend, organiz
 - [:heavy_check_mark:] Configurar Java LTS
 - [:heavy_check_mark: ] Configurar application.properties
 - [:heavy_check_mark: ] Conectar ao PostgreSQL
-- [ ] Criar schema inicial
+- [:heavy_check_mark: ] Criar schema inicial
 - [:heavy_check_mark:] Criar projeto no GitHub
 - [:heavy_check_mark:] Criar `.gitignore`
 - [:heavy_check_mark: ] Primeiro commit

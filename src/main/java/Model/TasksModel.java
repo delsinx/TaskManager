@@ -1,25 +1,23 @@
 package Model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
-@Table(name = "user")
+@Table(name = "tasks")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class UserModel {
+public class TasksModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,25 +28,30 @@ public class UserModel {
     @NotBlank
     @NotEmpty
     @NotNull
-    private String name;
+    private String title;
 
     @Column(nullable = false)
     @NotBlank
     @NotEmpty
     @NotNull
-    @Email
-    private String email;
+    private String description;
 
     @Column(nullable = false)
     @NotBlank
     @NotEmpty
     @NotNull
-    private String password;
+    private String status;
 
-    private LocalDateTime createdAt = LocalDateTime.now();
-    private LocalDateTime updatedAt;
+    @Column(nullable = false)
+    private Date dueDate;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
-    private List<TasksModel> tasks = new ArrayList<>();
+    @Column(nullable = false)
+    @ManyToOne
+    @JsonBackReference
+    @JoinColumn(name = "user_id")
+    private UserModel user;
+
+    private LocalDateTime createAt = LocalDateTime.now();
+    private LocalDateTime updateAt;
+
 }
