@@ -27,7 +27,7 @@ Este documento representa o plano de desenvolvimento do projeto backend, organiz
     - dto
     - config
     - security
-- [ ] Criar estrutura base do projeto
+- [:heavy_check_mark:] Criar estrutura base do projeto
 - [ ] Criar endpoint `/health`
 - [ ] Testar subida local
 
@@ -35,11 +35,11 @@ Este documento representa o plano de desenvolvimento do projeto backend, organiz
 
 ## ✅ FASE 3 — BANCO DE DADOS
 
-- [ ] Configurar Flyway ou Liquibase
-- [ ] Criar migration inicial
-- [ ] Criar entidade User
-- [ ] Mapear entidade com JPA
-- [ ] Criar repositório JPA
+- [:heavy_check_mark:] Configurar Flyway ou Liquibase
+- [:heavy_check_mark: ] Criar migration inicial
+- [:heavy_check_mark: ] Criar entidade User
+- [:heavy_check_mark: ] Mapear entidade com JPA
+- [:heavy_check_mark: ] Criar repositório JPA
 - [ ] Testar persistência no banco
 
 ---
