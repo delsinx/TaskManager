@@ -8,18 +8,18 @@ Este documento representa o plano de desenvolvimento do projeto backend, organiz
 
 - [:heavy_check_mark:] Criar projeto via Spring Initializr
 - [:heavy_check_mark:] Configurar Java LTS
-- [ ] Configurar application.properties
-- [ ] Conectar ao PostgreSQL
+- [:heavy_check_mark: ] Configurar application.properties
+- [:heavy_check_mark: ] Conectar ao PostgreSQL
 - [ ] Criar schema inicial
-- [ ] Criar projeto no GitHub
-- [ ] Criar `.gitignore`
-- [ ] Primeiro commit
+- [:heavy_check_mark:] Criar projeto no GitHub
+- [:heavy_check_mark:] Criar `.gitignore`
+- [:heavy_check_mark: ] Primeiro commit
 
 ---
 
 ## ✅ FASE 2 — ESTRUTURA DO BACKEND
 
-- [ ] Criar pacotes:
+- [:heavy_check_mark: ] Criar pacotes:
     - controller
     - service
     - repository
@@ -63,7 +63,7 @@ Este documento representa o plano de desenvolvimento do projeto backend, organiz
 - [ ] Criar Repository
 - [ ] Criar Service
 - [ ] Criar Controller
-- [ ] Criar DTOs de entrada e saída
+- [ ] Criar DTO de entrada e saída
 - [ ] Criar CRUD completo:
     - [ ] CREATE
     - [ ] READ
